@@ -1,7 +1,7 @@
 import React from 'react'
 import { generateId } from '../../helpers'
-import { TaskForm } from './components/TaskForm'
-import { Tasks } from './components/Tasks'
+import { TaskForm } from './TaskForm'
+import { Tasks } from './Tasks'
 import styles from './styles.module.css'
 import type { Task } from './types'
 

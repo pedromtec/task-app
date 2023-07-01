@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 import { Trash } from 'phosphor-react'
-import type { Task as TaskType } from '../../types'
+import type { Task as TaskType } from '../types'
 import styles from './styles.module.css'
 
 type TaskProps = {
@@ -14,6 +14,7 @@ export function Task({ task, onDeleteTask, onUpdateTask }: TaskProps) {
     <div className={styles.task}>
       <div className={styles.taskContent}>
         <input
+          data-testid={`task-${task.id}`}
           checked={task.isCompleted}
           onChange={() => {
             onUpdateTask(task.id)
@@ -30,6 +31,7 @@ export function Task({ task, onDeleteTask, onUpdateTask }: TaskProps) {
       </div>
 
       <button
+        data-testid={`delete-task-${task.id}`}
         className={styles.deleteTask}
         onClick={() => {
           onDeleteTask(task.id)

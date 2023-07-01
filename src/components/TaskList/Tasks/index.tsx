@@ -1,10 +1,10 @@
 import React from 'react'
-import { Task as TaskType } from '../../types'
+import { Task as TaskType } from '../types'
 import { EmptyTasks } from './EmptyTasks'
 import styles from './styles.module.css'
 import { Task } from './Task'
 
-type TasksProps = {
+export type TasksProps = {
   tasks: TaskType[]
   onDeleteTask: (taskId: string) => void
   onUpdateTask: (taskId: string) => void
