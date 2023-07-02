@@ -2,7 +2,7 @@ import { PlusCircle } from 'phosphor-react'
 import React from 'react'
 import styles from './styles.module.css'
 
-type TaskFromProps = {
+export type TaskFromProps = {
   onCreateNewTask: (taskDescription: string) => void
 }
 
