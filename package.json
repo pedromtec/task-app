@@ -13,8 +13,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "husky:prepare": "husky install", 
-    "lint-staged": "lint-staged"
+    "postinstall": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

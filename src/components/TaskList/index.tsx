@@ -7,7 +7,7 @@ import type { Task } from './types'
 
 export function TaskList() {
   const [tasks, setTasks] = React.useState<Task[]>([])
-
+  console.log('Test')
   const handleCreateNewTask = (taskDescription: string): void => {
     const newTask = {
       id: generateId(),
